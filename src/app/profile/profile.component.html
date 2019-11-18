@@ -1,0 +1,9 @@
+<div [ngClass]="{ contactCard: true }">
+  <img src="/assets/architecture-buildings-city-325185.jpeg" />
+  <p [ngClass]="{ name: true }">{{ profile.name }}</p>
+  <p [ngClass]="{ contact: true }">{{ profile.contact }}</p>
+  <p [ngClass]="{ bio: true }">{{ profile.bio }}</p>
+  <button [ngClass]="{ editButton: true }">
+    <a routerLink="/edit">Edit</a>
+  </button>
+</div>

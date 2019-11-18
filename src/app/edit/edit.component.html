@@ -1,0 +1,26 @@
+<div>
+  <h1 [ngClass]="{ h1Style: true }">
+    Use the form below to update your profile.
+  </h1>
+  <form (ngSubmit)="onSubmit()">
+    <p>Name</p>
+    <input
+      [ngClass]="{ name: true }"
+      [(ngModel)]="profile.name"
+      name="profileName"
+    />
+    <p>Contact</p>
+    <input
+      [ngClass]="{ contact: true }"
+      [(ngModel)]="profile.contact"
+      name="profileName"
+    />
+    <p>Bio</p>
+    <input
+      [ngClass]="{ bio: true }"
+      [(ngModel)]="profile.bio"
+      name="profileName"
+    />
+    <button type="submit">Update</button>
+  </form>
+</div>
